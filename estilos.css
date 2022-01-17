@@ -1,0 +1,228 @@
+#sidebar{
+    position:fixed;
+    width: 200px;
+    height: 100%;
+    background: #212121;
+    left: -200px;
+    transition: 200ms linear;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar{
+    color: rgba(230,230,230,.9 );
+    text-align: center;
+    padding: 15px 10px; 
+    list-style: none;
+    border-bottom: 15px solid rgba(128, 128, 128, 0.3);
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    border: 5px solid #e7e7e7; 
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+#navstyle li{
+    display: block;
+    width: 100%;
+    padding: .5em;
+    margin: 1em 0em;
+}
+
+#navstyle a {
+    text-decoration: none;
+    background-color: rgba(129, 129, 129, 0.8);
+    display: block;
+    padding: 1em;
+    text-align: center;
+    font-family: 'verdana', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+
+body{
+    background-image: url(./img/sings.jpg);
+}
+
+header{
+    grid-area: header;
+    background-color: #630A10;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5) ;
+    padding: 1em;
+    font-family: 'verdana'; 
+
+
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'verdana'; 
+}
+header p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'verdana'; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: #284849
+}
+/* recuerda heigth para ampliar el cuadro de texto */
+#main{
+    position: absolute; 
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1em;
+    background-color: rgba(255,255,255,.8);
+    height: 100%;
+    margin: 0 auto;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0,0,0,.3);   
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#main section{
+    margin-bottom: 1em;
+    background-color: #EEEEEE;
+    padding: 1em;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#main h1{
+    color:rgb(80, 80, 80);
+    text-align:center;
+    font-family: 'verdana'; 
+
+}
+
+#main h2{
+    text-align:center;
+    font-family: 'verdana';
+    color: rgb(247, 244, 254);
+    margin-bottom: 1em;
+    background: #BD4B4B; 
+    padding: 1em;
+    border-radius: 5px;  
+}
+
+#main p{
+    padding: 1em;
+    font-family: 'nunito', sans-serif;
+}
+
+.transit {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*visibility: hidden;*/
+
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3seg ease all;
+
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup h3 {
+    font-size:36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.popup h4 {
+    font-size:26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5e7de3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3sg ease all;
+}
+
+.btn-submit:hover {
+    background: rgba (94, 125, 227, .5)
+}
